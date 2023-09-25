@@ -14,7 +14,7 @@ const DonationCard = ({ donation }) => {
 
   return (
     <div>
-      <Link to={`/donation/${id}`}>
+      <Link to={`/donationDetails/${id}`}>
         <div
           style={{ backgroundColor: card_color }}
           className="card-compact rounded-lg"
