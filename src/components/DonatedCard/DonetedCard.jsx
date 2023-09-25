@@ -1,24 +1,50 @@
 import PropTypes from "prop-types";
+import { BsCurrencyDollar } from "react-icons/bs";
 
 const DonatedCard = ({ donatedCard }) => {
-  const { image, card_color } = donatedCard;
+  const {
+    title,
+    image,
+    card_color,
+    category,
+    category_color,
+    title_color,
+    price,
+  } = donatedCard;
 
   return (
-    <div>
-      <div style={{ backgroundColor: card_color }} className="hero rounded-lg">
-        <div className="flex flex-col lg:flex-row items-center justify-start">
-          <div className="mr-6">
-            <img src={image} className="rounded-l-lg h-full" />
-          </div>
-          <div className="py-6">
-            <h1 className="text-5xl font-bold">Box Office News!</h1>
-            <p className="py-6">
-              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
-              et a id nisi.
-            </p>
-            <button className="btn btn-primary">Get Started</button>
-          </div>
+    <div style={{ backgroundColor: card_color }} className="rounded-lg">
+      <div className="flex">
+        <div className="mr-6 rounded-l-lg">
+          <img
+            className="rounded-l-lg"
+            src={image}
+            alt={`image for ${title}`}
+          />
+        </div>
+        <div className="py-6">
+          <button
+            style={{ backgroundColor: category_color, color: title_color }}
+            className="py-1 px-3 rounded text-sm"
+          >
+            {category}
+          </button>
+          <h3 className="text-[#0B0B0B] text-2xl font-semibold my-2">
+            {title}
+          </h3>
+          <p
+            className="font-semibold flex items-center"
+            style={{ color: title_color }}
+          >
+            <BsCurrencyDollar></BsCurrencyDollar>
+            {price}
+          </p>
+          <button
+            style={{ backgroundColor: title_color }}
+            className="py-2 px-4 text-white font-semibold text-lg rounded mt-5"
+          >
+            View Details
+          </button>
         </div>
       </div>
     </div>
