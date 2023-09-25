@@ -1,6 +1,6 @@
 const Banner = () => {
   return (
-    <div className="bg-[url('/src/assets/images/banner-bg.png')]">
+    <div className="bg-[url('/src/assets/images/banner-bg.png')] bg-cover bg-center">
       <div className="pt-36 pb-48 bg-[#fffffff2]">
         <div className="container mx-auto flex flex-col items-center justify-center">
           <h2 className="text-[#0B0B0B] text-5xl font-bold">
