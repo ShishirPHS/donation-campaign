@@ -1,12 +1,15 @@
 import { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import { BsCurrencyDollar } from "react-icons/bs";
+import { saveDonation } from "../Utility/LocalStorage";
 
 const DonationDetails = () => {
   const [donation, setDonation] = useState({});
   const { title, title_color, image, price } = donation;
 
   const { id } = useParams();
+  const idInt = parseInt(id);
+
   const allDonations = useLoaderData();
 
   useEffect(() => {
@@ -15,6 +18,10 @@ const DonationDetails = () => {
     );
     setDonation(findDonation);
   }, [id, allDonations]);
+
+  const handleDonation = () => {
+    saveDonation(idInt);
+  };
 
   return (
     <div className="container mx-auto">
@@ -26,6 +33,7 @@ const DonationDetails = () => {
         />
         <div className="absolute bottom-0 w-full bg-[#0b0b0b80] p-9 rounded-b-lg">
           <button
+            onClick={handleDonation}
             style={{ backgroundColor: title_color }}
             className="flex items-center py-4 px-7 rounded text-white text-xl font-semibold "
           >
