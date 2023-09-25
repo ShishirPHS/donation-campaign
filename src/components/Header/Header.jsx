@@ -17,7 +17,7 @@ const Header = () => {
   );
 
   return (
-    <div>
+    <div className="container mx-auto">
       <div className="navbar bg-base-100">
         <img src={logo} alt="" />
         <div className="navbar-start">
