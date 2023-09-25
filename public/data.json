@@ -6,9 +6,9 @@
     "category": "Health",
     "description": "Your donation will provide essential medical care, vaccinations, and health education to children in need. Help us ensure a healthier future for our youngest generation.",
     "price": 50,
-    "card_color": "#FF5733",
-    "category_color": "#4286f4",
-    "title_color": "#33FF57"
+    "card_color": "#0052ff26",
+    "category_color": "#0052ff33",
+    "title_color": "#0052FF"
   },
   {
     "id": 2,
@@ -17,9 +17,9 @@
     "category": "Education",
     "description": "Invest in the future by sponsoring scholarships for talented students who lack the means to pursue higher education. Your support can unlock a world of opportunities.",
     "price": 30,
-    "card_color": "#33FF57",
-    "category_color": "#FF5733",
-    "title_color": "#4286f4"
+    "card_color": "#ff444a26",
+    "category_color": "#ff444a33",
+    "title_color": "#FF444A"
   },
   {
     "id": 3,
@@ -28,9 +28,9 @@
     "category": "Clothing",
     "description": "Donate warm clothing items like coats, blankets, and gloves to ensure that individuals and families in need can stay comfortable and safe during the cold winter months.",
     "price": 70,
-    "card_color": "#4286f4",
-    "category_color": "#33FF57",
-    "title_color": "#FF5733"
+    "card_color": "#EBF6E2",
+    "category_color": "#79c23f33",
+    "title_color": "#79C23F"
   },
   {
     "id": 4,
@@ -39,9 +39,9 @@
     "category": "Food",
     "description": "Join our mission to combat hunger in our community. Your donation will provide nutritious meals and essential food items to those who are struggling to put food on the table.",
     "price": 20,
-    "card_color": "#FF5733",
-    "category_color": "#4286f4",
-    "title_color": "#33FF57"
+    "card_color": "#f8714726",
+    "category_color": "#f8714733",
+    "title_color": "#F87147"
   },
   {
     "id": 5,
@@ -50,9 +50,9 @@
     "category": "Food",
     "description": "Support our emergency food relief efforts to provide immediate assistance to individuals and families facing food insecurity. Your donation can make a difference today.",
     "price": 25,
-    "card_color": "#33FF57",
-    "category_color": "#FF5733",
-    "title_color": "#4286f4"
+    "card_color": "#f8714726",
+    "category_color": "#f8714733",
+    "title_color": "#F87147"
   },
   {
     "id": 6,
@@ -61,9 +61,9 @@
     "category": "Clothing",
     "description": "Help job seekers dress for success by donating professional attire. Your contribution can empower individuals to make a positive impression and secure employment.",
     "price": 40,
-    "card_color": "#4286f4",
-    "category_color": "#33FF57",
-    "title_color": "#FF5733"
+    "card_color": "#EBF6E2",
+    "category_color": "#79c23f33",
+    "title_color": "#79C23F"
   },
   {
     "id": 7,
@@ -72,9 +72,9 @@
     "category": "Education",
     "description": "Support our mission to provide educational resources to learners of all ages. Your donation can help bridge the educational gap and promote lifelong learning.",
     "price": 15,
-    "card_color": "#FF5733",
-    "category_color": "#4286f4",
-    "title_color": "#33FF57"
+    "card_color": "#ff444a26",
+    "category_color": "#ff444a33",
+    "title_color": "#FF444A"
   },
   {
     "id": 8,
@@ -83,9 +83,9 @@
     "category": "Health",
     "description": "Ensure that vulnerable communities have access to essential healthcare services. Your donation can improve the well-being and quality of life for those in need.",
     "price": 55,
-    "card_color": "#33FF57",
-    "category_color": "#FF5733",
-    "title_color": "#4286f4"
+    "card_color": "#0052ff26",
+    "category_color": "#0052ff33",
+    "title_color": "#0052FF"
   },
   {
     "id": 9,
@@ -94,9 +94,9 @@
     "category": "Health",
     "description": "Support initiatives that promote children's health and wellness. Your contribution can fund vaccinations, health education, and preventive care for kids in need.",
     "price": 30,
-    "card_color": "#FF5733",
-    "category_color": "#4286f4",
-    "title_color": "#33FF57"
+    "card_color": "#0052ff26",
+    "category_color": "#0052ff33",
+    "title_color": "#0052FF"
   },
   {
     "id": 10,
@@ -105,9 +105,9 @@
     "category": "Education",
     "description": "Empower underserved communities through education. Your donation can provide access to quality learning resources and help students reach their full potential.",
     "price": 40,
-    "card_color": "#4286f4",
-    "category_color": "#33FF57",
-    "title_color": "#FF5733"
+    "card_color": "#ff444a26",
+    "category_color": "#ff444a33",
+    "title_color": "#FF444A"
   },
   {
     "id": 11,
@@ -116,9 +116,9 @@
     "category": "Clothing",
     "description": "Promote sustainable agriculture and access to fresh, locally grown food. Your donation can help farmers thrive and ensure a healthier food supply for everyone.",
     "price": 50,
-    "card_color": "#FF5733",
-    "category_color": "#4286f4",
-    "title_color": "#33FF57"
+    "card_color": "#EBF6E2",
+    "category_color": "#79c23f33",
+    "title_color": "#79C23F"
   },
   {
     "id": 12,
@@ -127,8 +127,8 @@
     "category": "Food",
     "description": "Empower families with nutrition education. Your donation can support programs that teach families how to make healthy food choices and improve their overall well-being.",
     "price": 20,
-    "card_color": "#33FF57",
-    "category_color": "#FF5733",
-    "title_color": "#4286f4"
+    "card_color": "#f8714726",
+    "category_color": "#f8714733",
+    "title_color": "#F87147"
   }
 ]
