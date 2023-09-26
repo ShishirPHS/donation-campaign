@@ -25,6 +25,7 @@ const Chart = () => {
         fill="white"
         textAnchor={x > cx ? "start" : "end"}
         dominantBaseline="central"
+        className="text-3xl font-bold"
       >
         {`${(percent * 100).toFixed(0)}%`}
       </text>
