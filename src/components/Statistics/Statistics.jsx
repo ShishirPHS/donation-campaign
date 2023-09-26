@@ -1,9 +1,17 @@
+import { useLoaderData } from "react-router-dom";
 import Chart from "../Chart/Chart";
+import { getStoredDonations } from "../Utility/LocalStorage";
 
 const Statistics = () => {
+  const totalDonatable = useLoaderData();
+  const donations = getStoredDonations();
+
+  const totalDonations = totalDonatable.length;
+  const myDonations = donations.length;
+
   return (
-    <div className="container mx-auto">
-      <Chart></Chart>
+    <div className="container mx-auto mb-44">
+      <Chart myDonations={myDonations} totalDonations={totalDonations}></Chart>
       <div className="flex justify-center mt-10">
         <div className="flex items-center mr-14">
           <h5 className="text-[#0B0B0B] text-lg">Your Donation</h5>

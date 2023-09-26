@@ -1,7 +1,11 @@
 import { Cell, Pie, PieChart } from "recharts";
+import PropTypes from "prop-types";
 
-const Chart = () => {
-  const data = [{ value: 8 }, { value: 4 }];
+const Chart = ({ myDonations, totalDonations }) => {
+  const data = [
+    { value: totalDonations - myDonations },
+    { value: myDonations },
+  ];
 
   const COLORS = ["#FF444A", "#00C49F"];
 
@@ -52,6 +56,11 @@ const Chart = () => {
       </PieChart>
     </div>
   );
+};
+
+Chart.propTypes = {
+  myDonations: PropTypes.number.isRequired,
+  totalDonations: PropTypes.number.isRequired,
 };
 
 export default Chart;
