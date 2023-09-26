@@ -14,15 +14,15 @@ const DonatedCard = ({ donatedCard }) => {
 
   return (
     <div style={{ backgroundColor: card_color }} className="rounded-lg">
-      <div className="flex">
-        <div className="mr-6 rounded-l-lg">
+      <div className="grid grid-cols-7 gap-6">
+        <div className="col-span-3 h-[250px] rounded-l-lg">
           <img
-            className="rounded-l-lg"
+            className="w-full h-full object-cover rounded-l-lg"
             src={image}
             alt={`image for ${title}`}
           />
         </div>
-        <div className="py-6">
+        <div className="col-span-4 py-6">
           <button
             style={{ backgroundColor: category_color, color: title_color }}
             className="py-1 px-3 rounded text-sm"
