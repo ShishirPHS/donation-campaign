@@ -1,13 +1,10 @@
-import { useState } from "react";
+import PropTypes from "prop-types";
 
-const Banner = () => {
-  const [search, setSearch] = useState("");
+const Banner = ({ handleSearchValue }) => {
   const handleFormSubmit = (e) => {
     e.preventDefault();
-  };
-
-  const handleSearchChange = (e) => {
-    setSearch(e.target.value);
+    handleSearchValue(e.target.search.value);
+    e.target.search.value = "";
   };
 
   return (
@@ -20,9 +17,9 @@ const Banner = () => {
           <div>
             <form onSubmit={handleFormSubmit}>
               <input
-                onChange={handleSearchChange}
                 className="p-4 w-[400px] border rounded-l-lg mt-10"
                 type="text"
+                name="search"
                 placeholder="Search here...."
               />
               <input
@@ -36,6 +33,10 @@ const Banner = () => {
       </div>
     </div>
   );
+};
+
+Banner.propTypes = {
+  handleSearchValue: PropTypes.func.isRequired,
 };
 
 export default Banner;

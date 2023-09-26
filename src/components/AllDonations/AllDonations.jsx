@@ -1,7 +1,8 @@
 import PropTypes from "prop-types";
 import DonationCard from "../DonationCard/DonationCard";
 
-const AllDonations = ({ allDonations }) => {
+const AllDonations = ({ allDonations, searchValue }) => {
+  console.log(searchValue);
   return (
     <div className="container mx-auto mt-28 mb-44">
       <div className="grid grid-cols-4 gap-6">
@@ -15,6 +16,7 @@ const AllDonations = ({ allDonations }) => {
 
 AllDonations.propTypes = {
   allDonations: PropTypes.array.isRequired,
+  searchValue: PropTypes.string.isRequired,
 };
 
 export default AllDonations;
