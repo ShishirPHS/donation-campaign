@@ -8,8 +8,6 @@ const Donation = () => {
   const [noDataFound, setNoDataFound] = useState("");
   const [isShow, setIsShow] = useState(false);
 
-  console.log(isShow);
-
   const allDonations = useLoaderData();
 
   useEffect(() => {
