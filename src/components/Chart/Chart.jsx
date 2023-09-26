@@ -23,11 +23,11 @@ const Chart = () => {
         x={x}
         y={y}
         fill="white"
-        textAnchor={x > cx ? "start" : "end"}
+        textAnchor={x > cx ? "center" : "center"}
         dominantBaseline="central"
         className="text-3xl font-bold"
       >
-        {`${(percent * 100).toFixed(0)}%`}
+        {`${(percent * 100).toFixed(1)}%`}
       </text>
     );
   };
