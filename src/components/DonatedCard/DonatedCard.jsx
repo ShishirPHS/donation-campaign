@@ -14,7 +14,7 @@ const DonatedCard = ({ donatedCard }) => {
 
   return (
     <div style={{ backgroundColor: card_color }} className="rounded-lg">
-      <div className="grid grid-cols-7 gap-6">
+      <div className="grid grid-cols-7 gap-3 lg:gap-6">
         <div className="col-span-3 h-[250px] rounded-l-lg">
           <img
             className="w-full h-full object-cover rounded-l-lg"

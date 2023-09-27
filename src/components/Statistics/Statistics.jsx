@@ -12,8 +12,8 @@ const Statistics = () => {
   return (
     <div className="container mx-auto mb-44">
       <Chart myDonations={myDonations} totalDonations={totalDonations}></Chart>
-      <div className="flex justify-center mt-10">
-        <div className="flex items-center mr-14">
+      <div className="flex flex-col items-center md:flex-row justify-center mt-10">
+        <div className="flex items-center md:mr-14">
           <h5 className="text-[#0B0B0B] text-lg">Your Donation</h5>
           <div className="bg-[#00C49F] w-[100px] h-3 rounded-sm ml-4"></div>
         </div>

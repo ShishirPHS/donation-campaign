@@ -11,13 +11,13 @@ const Banner = ({ handleSearchValue }) => {
     <div className="bg-[url('/src/assets/images/banner-bg.png')] bg-cover bg-center">
       <div className="pt-36 pb-48 bg-[#fffffff2]">
         <div className="container mx-auto flex flex-col items-center justify-center">
-          <h2 className="text-[#0B0B0B] text-5xl font-bold">
+          <h2 className="text-[#0B0B0B] text-3xl lg:text-5xl font-bold text-center">
             I Grow By Helping People In Need
           </h2>
           <div>
             <form onSubmit={handleFormSubmit}>
               <input
-                className="p-4 w-[400px] border rounded-l-lg mt-10"
+                className="p-4 w-[170px] sm:w-[300px] md:w-[350px] lg:w-[400px] border rounded-l-lg mt-10"
                 type="text"
                 name="search"
                 placeholder="Search here...."

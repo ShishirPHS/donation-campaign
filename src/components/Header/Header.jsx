@@ -18,7 +18,7 @@ const Header = () => {
   );
 
   return (
-    <div className="container mx-auto py-12 lg:px-[10px]">
+    <div className="container mx-auto py-12 px-5 lg:px-[10px]">
       <div className="navbar">
         <img src={logo} alt="" />
         <div className="navbar-start">

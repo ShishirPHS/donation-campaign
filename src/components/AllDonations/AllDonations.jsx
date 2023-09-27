@@ -7,8 +7,8 @@ const AllDonations = ({ allDonations, searchValue }) => {
   );
 
   return (
-    <div className="container mx-auto mt-28 mb-44 lg:px-[10px]">
-      <div className="grid grid-cols-4 gap-6 lg:gap-4 2xl:gap-6">
+    <div className="container mx-auto mt-28 mb-44 px-5 lg:px-[10px]">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-4 2xl:gap-6">
         {searchedCategoryData.length > 0
           ? searchedCategoryData?.map((donation) => (
               <DonationCard

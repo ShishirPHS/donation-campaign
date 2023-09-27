@@ -24,14 +24,14 @@ const DonationDetails = () => {
   };
 
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto px-5 lg:px-[10px]">
       <div className="relative">
         <img
           className="w-full rounded-lg mt-7 mb-14"
           src={image}
           alt={`Image for ${title}`}
         />
-        <div className="absolute bottom-0 w-full bg-[#0b0b0b80] p-9 rounded-b-lg">
+        <div className="absolute bottom-0 w-full bg-[#0b0b0b80] p-3 md:p-9 rounded-b-lg">
           <button
             onClick={handleDonation}
             style={{ backgroundColor: title_color }}
