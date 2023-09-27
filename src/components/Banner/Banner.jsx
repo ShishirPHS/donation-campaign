@@ -23,7 +23,7 @@ const Banner = ({ handleSearchValue }) => {
                 placeholder="Search here...."
               />
               <input
-                className="py-4 px-7 bg-[#FF444A] border border-[#FF444A] rounded-r-lg"
+                className="py-4 px-7 bg-[#FF444A] text-white font-semibold border border-[#FF444A] rounded-r-lg"
                 type="submit"
                 value="Search"
               />
