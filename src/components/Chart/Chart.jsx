@@ -37,7 +37,7 @@ const Chart = ({ myDonations, totalDonations }) => {
   };
 
   return (
-    <div>
+    <div className="z-10 mt-7">
       <PieChart className="mx-auto" width={400} height={400}>
         <Pie
           data={data}
