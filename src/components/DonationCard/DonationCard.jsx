@@ -17,24 +17,26 @@ const DonationCard = ({ donation }) => {
       <Link to={`/donationDetails/${id}`}>
         <div
           style={{ backgroundColor: card_color }}
-          className="card-compact rounded-lg"
+          className="rounded-lg h-full"
         >
-          <figure>
-            <img
-              className="w-full rounded-t-lg"
-              src={image}
-              alt={`Image for ${title}`}
-            />
-          </figure>
-          <div className="card-body">
-            <div className="card-actions justify-start">
-              <button
-                style={{ backgroundColor: category_color, color: title_color }}
-                className="text-left py-1 px-3 rounded "
-              >
-                {category}
-              </button>
-            </div>
+          <img
+            className="w-full rounded-t-lg"
+            src={image}
+            alt={`Image for ${title}`}
+          />
+          <div className="p-4">
+            <button
+              style={{ backgroundColor: category_color, color: title_color }}
+              className="text-left py-1 px-3 rounded text-sm font-medium"
+            >
+              {category}
+            </button>
+            <h3
+              style={{ color: title_color }}
+              className="mt-2 font-semibold text-xl"
+            >
+              {title}
+            </h3>
           </div>
         </div>
       </Link>
