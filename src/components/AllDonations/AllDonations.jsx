@@ -5,7 +5,7 @@ const AllDonations = ({ allDonations, searchValue }) => {
   const searchedCategoryData = allDonations.filter(
     (donation) => donation.category.toLowerCase() == searchValue.toLowerCase()
   );
-  console.log(searchedCategoryData);
+
   return (
     <div className="container mx-auto mt-28 mb-44">
       <div className="grid grid-cols-4 gap-6">

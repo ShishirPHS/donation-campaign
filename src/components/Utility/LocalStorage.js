@@ -1,3 +1,5 @@
+import Swal from "sweetalert2";
+
 const getStoredDonations = () => {
   const storedDonations = localStorage.getItem("donations");
   if (storedDonations) {
@@ -15,9 +17,20 @@ const saveDonation = (id) => {
   if (!isExist) {
     storedDonations.push(id);
     localStorage.setItem("donations", JSON.stringify(storedDonations));
-    alert("you donate successfully!");
+    // alert("you donate successfully!");
+    Swal.fire({
+      icon: "success",
+      title: "You donate successfully",
+      showConfirmButton: false,
+      timer: 1500,
+    });
   } else {
-    alert("already donated");
+    Swal.fire({
+      icon: "error",
+      title: "Already Donated",
+      showConfirmButton: false,
+      timer: 1500,
+    });
   }
 };
 
