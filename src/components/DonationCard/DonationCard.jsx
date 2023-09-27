@@ -20,7 +20,7 @@ const DonationCard = ({ donation }) => {
           className="rounded-lg h-full"
         >
           <img
-            className="w-full rounded-t-lg"
+            className="w-full rounded-t-lg h-[180px] object-cover"
             src={image}
             alt={`Image for ${title}`}
           />
