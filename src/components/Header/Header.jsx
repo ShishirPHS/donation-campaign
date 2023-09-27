@@ -23,7 +23,7 @@ const Header = () => {
   );
 
   return (
-    <nav className="container mx-auto py-4 md:py-12 px-5 lg:px-[10px] bg-gray-300">
+    <nav className="container mx-auto py-4 md:py-12 px-5 lg:px-[10px]">
       <div className="flex items-center justify-between">
         <img
           className="w-[100px] lg:w-[252px]"
@@ -32,7 +32,7 @@ const Header = () => {
         />
         <ul
           className={`lg:flex absolute bg-white px-12 lg:px-0 py-1 lg:py-0 border lg:border-none lg:static lg:space-x-12 text-[#0B0B0B] text-lg duration-1000 z-20 right-[50%] lg:right-0 translate-x-[50%] lg:translate-x-0 rounded-lg lg:rounded-none ${
-            open ? "top-16" : "-top-52"
+            open ? "top-16 md:top-[130px]" : "-top-52"
           }`}
         >
           {links}
