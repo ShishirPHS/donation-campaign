@@ -38,14 +38,14 @@ const Chart = ({ myDonations, totalDonations }) => {
 
   return (
     <div className="z-10 mt-7">
-      <PieChart className="mx-auto" width={400} height={400}>
+      <PieChart className="mx-auto" width={350} height={350}>
         <Pie
           data={data}
           cx="50%"
           cy="50%"
           labelLine={false}
           label={renderCustomizedLabel}
-          outerRadius={180}
+          outerRadius={150}
           fill="#8884d8"
           dataKey="value"
         >
