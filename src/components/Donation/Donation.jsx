@@ -28,7 +28,9 @@ const Donation = () => {
     <div className="container mx-auto">
       <div>
         {noDataFound ? (
-          <p>{noDataFound}</p>
+          <div className="flex items-center justify-center h-[40vh]">
+            <p className="text-3xl font-bold">{noDataFound}...</p>
+          </div>
         ) : (
           <div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6 mt-8 mb-10 px-5 lg:px-[10px]">
