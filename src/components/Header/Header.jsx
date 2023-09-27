@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import logo from "../../assets/images/Logo.png";
+import "../Header/Header.css";
 
 const Header = () => {
   const links = (
@@ -18,7 +19,7 @@ const Header = () => {
 
   return (
     <div className="container mx-auto py-12">
-      <div className="navbar bg-base-100">
+      <div className="navbar">
         <img src={logo} alt="" />
         <div className="navbar-start">
           <div className="dropdown">
@@ -47,7 +48,9 @@ const Header = () => {
           </div>
         </div>
         <div className="navbar-end hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">{links}</ul>
+          <ul className="flex space-x-12 px-1 text-[#0B0B0B] text-lg">
+            {links}
+          </ul>
         </div>
       </div>
     </div>
