@@ -5,7 +5,7 @@ import { saveDonation } from "../Utility/LocalStorage";
 
 const DonationDetails = () => {
   const [donation, setDonation] = useState({});
-  const { title, title_color, image, price } = donation;
+  const { title, title_color, image, price, description } = donation;
 
   const { id } = useParams();
   const idInt = parseInt(id);
@@ -41,6 +41,10 @@ const DonationDetails = () => {
             {price}
           </button>
         </div>
+      </div>
+      <div className="mb-32">
+        <h3 className="text-[#0B0B0B] text-[40px] font-bold mb-6">{title}</h3>
+        <p className="text-[#0b0b0bb3]">{description}</p>
       </div>
     </div>
   );
